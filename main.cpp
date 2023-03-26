@@ -67,7 +67,7 @@ void BM_copy_vector_of_structures_range_reserve(benchmark::State &State) {
   State.SetBytesProcessed(State.iterations() * Data.size());
 }
 
-void BM_copy_vector_of_structures_std_copy_back_inserter(benchmark::State &State) {
+void BM_copy_vector_of_structures_std_copy(benchmark::State &State) {
   std::vector<MyStruct> Data;
   std::mt19937 RandomD(std::random_device{}());
   std::uniform_int_distribution<int> D;
@@ -83,7 +83,7 @@ void BM_copy_vector_of_structures_std_copy_back_inserter(benchmark::State &State
   State.SetBytesProcessed(State.iterations() * Data.size());
 }
 
-void BM_copy_vector_of_structures_std_copy(benchmark::State &State) {
+void BM_copy_vector_of_structures_std_copy_back_inserter(benchmark::State &State) {
   std::vector<MyStruct> Data;
   std::mt19937 RandomD(std::random_device{}());
   std::uniform_int_distribution<int> D;

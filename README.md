@@ -11,8 +11,8 @@ Comparison of vector<MyStruct> (MyStruct just a wrapper for int) vs vector<int> 
 | BM_copy_vector_of_structures                        | 576979 ns | 576024 ns | 942        | **1.69535G/s** |
 | BM_copy_vector_of_structures_memcpy                 | 577748 ns | 576573 ns | 975        | 1.69374G/s     |
 | BM_copy_vector_of_structures_range_reserve          | 963221 ns | 962010 ns | 715        | 1039.49M/s     |
-| BM_copy_vector_of_structures_std_copy               | 738655 ns | 737857 ns | 780        | 1.32351G/s     |
-| BM_copy_vector_of_structures_std_copy_back_inserter | 567281 ns | 566021 ns | 1171       | 1.72531G/s     |
+| BM_copy_vector_of_structures_std_copy               | 567281 ns | 566021 ns | 1171       | 1.72531G/s     |
+| BM_copy_vector_of_structures_std_copy_back_inserter | 738655 ns | 737857 ns | 780        | 1.32351G/s     |
 | BM_copy_vector_of_ints                              | 366610 ns | 366216 ns | 1873       | **2.66663G/s** |
 | BM_copy_vector_of_ints_memcpy                       | 366780 ns | 366437 ns | 1872       | 2.66502G/s     |
 | BM_copy_vector_of_ints_range_reserve                | 813321 ns | 812090 ns | 756        | 1.20253G/s     |
