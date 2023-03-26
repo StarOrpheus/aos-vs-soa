@@ -1,0 +1,9 @@
+{
+  "name" : "aos-vs-soa",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "464f782e269afe54243b156e5b240c11f7d2d7f3",
+  "dependencies" : [ {
+    "name" : "benchmark",
+    "version>=" : "1.7.1"
+  } ]
+}
